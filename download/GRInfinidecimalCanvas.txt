@@ -41,11 +41,11 @@ paragraph = Infinidecimal maintains an array of numbers to represent the canvas.
 # compare different versions of the same Library, and check if an update is 
 # available. You should think of it as a counter, counting the total number of 
 # releases you've had.
-version = 1  # This must be parsable as an int
+version = 2  # This must be parsable as an int
 
 # The version as the user will see it. If blank, the version attribute will be 
 # used here. This should be a single word, with no spaces.
-prettyVersion = 1.0.0  # This is treated as a String
+prettyVersion = 1.0.1  # This is treated as a String
 
 # The min and max revision of Processing compatible with your Library.
 # Note that these fields use the revision and not the version of Processing, 
@@ -53,5 +53,5 @@ prettyVersion = 1.0.0  # This is treated as a String
 # You can find the revision numbers in the change log: https://raw.githubusercontent.com/processing/processing/master/build/shared/revisions.txt
 # Only use maxRevision (or minRevision), when your Library is known to 
 # break in a later (or earlier) release. Otherwise, use the default value 0.
-minRevision = 0
-maxRevision = 0
+minRevision = 269
+maxRevision = 270

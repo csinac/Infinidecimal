@@ -31,7 +31,7 @@ import processing.core.*;
 public class Infinidecimal {
 	PApplet app;
 
-	public final static String VERSION = "1.0.0";
+	public final static String VERSION = "##library.prettyVersion##";
 
 	private int w;
 	private int h;
@@ -218,7 +218,6 @@ public class Infinidecimal {
 	}
 
 	/**
-	 * Private Function
 	 * Plots an anti-aliased point on the value array, with the
 	 * given intensity.
 	 * 
@@ -1395,8 +1394,8 @@ public class Infinidecimal {
 			y -= img.height / 2;
 		}
 
-		for (int i = 0; i < img.width; i++) {
-			for (int j = 0; j < img.height; j++) {
+		for (int i = 0; i < img.height; i++) {
+			for (int j = 0; j < img.width; j++) {
 				int c = img.pixels[i * img.width + j];
 				float val = intensity * ((c >> 16 & 0xFF) + (c >> 8 & 0xFF) + (c & 0xFF)) / 765;
 				Dot(j + x, i + y, val);
